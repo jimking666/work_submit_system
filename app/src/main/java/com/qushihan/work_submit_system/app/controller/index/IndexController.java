@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.qushihan.work_submit_system.clazz.api.ClazzService;
 import com.qushihan.work_submit_system.clazz.dto.ClazzDto;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 @RequestMapping("/index")
 public class IndexController {
@@ -50,14 +52,19 @@ public class IndexController {
     /**
      * 浏览班级页面
      *
-     * @param map
+     * @param request
      *
      * @return
      */
     @RequestMapping("/browseClazzPage")
-    public String forwordBrowseClazzPage(Map map) {
+    public String forwordBrowseClazzPage(HttpServletRequest request) {
         List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
-        map.put("clazzDtos", clazzDtos);
+        request.getServletContext().setAttribute("clazzDtos", clazzDtos);
+        return "/browseClazzPage";
+    }
+
+    @RequestMapping("/browseClazzPageSearch")
+    public String forwordBrowseClazzPageSearch() {
         return "/browseClazzPage";
     }
 

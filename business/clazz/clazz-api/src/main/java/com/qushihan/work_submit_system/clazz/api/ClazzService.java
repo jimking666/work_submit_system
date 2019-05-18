@@ -39,4 +39,11 @@ public interface ClazzService {
      * @return
      */
     ClazzDto queryClazzDtoByClazzId(Long clazzId);
+
+    /**
+     * 通过搜索获取班级
+     *
+     * @return
+     */
+    List<ClazzDto> getBySearchClazzName(String searchClazzName);
 }

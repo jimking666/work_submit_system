@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -53,11 +54,25 @@ public class ClazzDao {
      * @param clazzId
      */
     public Integer studentCountIncrease(Clazz clazz, Long clazzId) {
+        if (Optional.ofNullable(clazz).isPresent()) {
+            return 0;
+        }
+        if (Optional.ofNullable(clazzId).isPresent()) {
+            return 0;
+        }
         ClazzExample clazzExample = new ClazzExample();
         ClazzExample.Criteria criteria = clazzExample.createCriteria();
         criteria.andClazzIdEqualTo(clazzId);
         return clazzMapper.updateByExampleSelective(clazz, clazzExample);
     }
 
-
+    public List<Clazz> getBySearchClazzName(String searchClazzName) {
+        ClazzExample clazzExample = new ClazzExample();
+        ClazzExample.Criteria criteria = clazzExample.createCriteria();
+        if (StringUtils.isNotEmpty(searchClazzName)) {
+            criteria.andClazzNameLike(searchClazzName + "%");
+        }
+        criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
+        return clazzMapper.selectByExample(clazzExample);
+    }
 }

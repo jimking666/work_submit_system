@@ -27,7 +27,7 @@ public class ClazzServiceImpl implements ClazzService {
     public List<ClazzDto> queryAllClazz() {
         List<Clazz> clazzes = clazzDao.queryAllClazz();
         if (CollectionUtils.isEmpty(clazzes)) {
-            return Collections.EMPTY_LIST;
+            return Collections.emptyList();
         }
         List<ClazzDto> clazzDtos = clazzes.stream().map(clazz -> {
             ClazzDto clazzDto = new ClazzDto();
@@ -69,5 +69,17 @@ public class ClazzServiceImpl implements ClazzService {
             return clazzDto;
         }
         return new ClazzDto();
+    }
+
+    @Override
+    public List<ClazzDto> getBySearchClazzName(String searchClazzName) {
+        List<Clazz> clazzes = clazzDao.getBySearchClazzName(searchClazzName);
+        return clazzes.stream()
+                .map(clazz -> {
+                    ClazzDto clazzDto = new ClazzDto();
+                    BeanUtils.copyProperties(clazz, clazzDto);
+                    return clazzDto;
+                })
+                .collect(Collectors.toList());
     }
 }

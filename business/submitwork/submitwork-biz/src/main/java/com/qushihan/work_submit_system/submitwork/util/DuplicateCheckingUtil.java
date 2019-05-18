@@ -30,7 +30,7 @@ public class DuplicateCheckingUtil {
     // 双斜杠类型的注释
     private static final int TYPE_DSLASH = 5;
 
-    /*C++关键字*/
+    /*Java关键字*/
     private String keyWords = "abstract|assert|boolean|break|byte|case|catch|char|class|const|continue|default|do" +
             "|double|else|enum|extends|final|finally|float|for|goto|if|implements|import|instanceof|int|interface" +
             "|long|native|new|package|private|protected|public|return|strictfp|short|static|super|switch|synchronized" +

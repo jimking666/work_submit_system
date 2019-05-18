@@ -62,6 +62,24 @@
                     }
                 })
             })
+            // 搜索班级
+            $("#searchClazz").click(function () {
+                $.ajax({
+                    url: "/clazz/getClazzBySearch",
+                    type: "post",
+                    data: JSON.stringify({
+                        "searchClazzName": $("#searchClazzName").val()
+                    }),
+                    contentType: "application/json;charset=utf-8",
+                    statusCode: {
+                        200: function (data) {
+                            if (data.indexOf("查询成功") != -1) {
+                                window.location = "/browseClazzPageSearch"
+                            }
+                        }
+                    }
+                })
+            })
         })
         // 点击加入班级触发事件
         function studentJoinClazz(studentId, clazzId) {
@@ -174,13 +192,12 @@
         <div class="meun-item meun-item-active" id="llbj">浏览班级</div>
     </div>
 
-
     <div id="rightContent">
         <div class="gl liulanbanji">
             <div class="cx">
                 <div class="input-group">
-                    <input placeholder="输入班级名查询" class="form-control right-ss"/>
-                    <span class="input-group-btn"><button class="btn btn-default right-ss">查询</button></span>
+                    <input placeholder="输入班级名查询" class="form-control right-ss" id="searchClazzName"/>
+                    <span class="input-group-btn"><button class="btn btn-default right-ss" id="searchClazz">查询</button></span>
                 </div>
             </div>
             <div class="biao">
@@ -225,88 +242,110 @@
                 </table>
             </div>
         </div>
-    </div>
-<#--离开班级-->
-    <div class="modal fade" id="tuichubanji" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">警告</h4>
-                </div>
-                <div class="modal-body">
-                    <p>确 定 退 出 此 班 级 ？</p>
-                </div>
-                <form>
-                    <input type="hidden" name="studentId" id="studentId">
-                </form>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        取消
-                    </button>
-                    <button type="button" class="btn btn-danger" id="quitClazz">
-                        确定退出
-                    </button>
+
+    <#--离开班级-->
+        <div class="modal fade" id="tuichubanji" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">警告</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>确 定 退 出 此 班 级 ？</p>
+                    </div>
+                    <form>
+                        <input type="hidden" name="studentId" id="studentId">
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            取消
+                        </button>
+                        <button type="button" class="btn btn-danger" id="quitClazz">
+                            确定退出
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-<#--加入班级-->
-    <div class="modal fade" id="jiarubanji" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title">加入班级</h4>
-                </div>
-                <div class="modal-body">
-                    <table class="table table-striped">
-                        <colgroup>
-                            <col style="width: 30%">
-                            <col style="width: 30%">
-                            <col style="width: 30%">
-                            <col style="">
-                        </colgroup>
-                        <thead>
-                        <tr>
-                            <th>班级id</th>
-                            <th>班级名称</th>
-                            <th>创建日期</th>
-                            <th>操作</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                                <#if clazzDtos??>
-                                    <#list clazzDtos as clazzDto>
-                                        <tr>
-                                            <td>${clazzDto.clazzId}</td>
-                                            <td>${clazzDto.clazzName}</td>
-                                            <td>${clazzDto.createTime?string("yyyy-MM-dd")}</td>
-                                            <td>
-                                                <#if studentDto??>
-                                                    <button class="btn btn-primary" data-toggle="modal"
-                                                            onclick="studentJoinClazz('${studentDto.studentId}','${clazzDto.clazzId}')">
-                                                        加入
-                                                    </button>
-                                                </#if>
-                                            </td>
-                                        </tr>
-                                    </#list>
-                                </#if>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
-                        关闭
-                    </button>
+    <#--加入班级-->
+        <div class="modal fade" id="jiarubanji" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">加入班级</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <colgroup>
+                                <col style="width: 30%">
+                                <col style="width: 30%">
+                                <col style="width: 30%">
+                                <col style="">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>班级id</th>
+                                <th>班级名称</th>
+                                <th>创建日期</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                    <#if clazzDtos??>
+                                        <#list clazzDtos as clazzDto>
+                                            <tr>
+                                                <td>${clazzDto.clazzId}</td>
+                                                <td>${clazzDto.clazzName}</td>
+                                                <td>${clazzDto.createTime?string("yyyy-MM-dd")}</td>
+                                                <td>
+                                                    <#if studentDto??>
+                                                        <button class="btn btn-primary" data-toggle="modal"
+                                                                onclick="studentJoinClazz('${studentDto.studentId}','${clazzDto.clazzId}')">
+                                                            加入
+                                                        </button>
+                                                    </#if>
+                                                </td>
+                                            </tr>
+                                        </#list>
+                                    </#if>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            关闭
+                        </button>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="dao">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>
