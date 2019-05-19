@@ -139,4 +139,16 @@ public class StudentServiceImpl implements StudentService {
         }).collect(Collectors.toList());
         return studentDtos;
     }
+
+    @Override
+    public List<StudentDto> getBySearchStudentName(String searchStudentName) {
+        List<Student> students = studentDao.getBySearchStudentName(searchStudentName);
+        return students.stream()
+                .map(student -> {
+                    StudentDto studentDto = new StudentDto();
+                    BeanUtils.copyProperties(student, studentDto);
+                    return studentDto;
+                })
+                .collect(Collectors.toList());
+    }
 }

@@ -61,4 +61,11 @@ public interface StudentService {
      * @return
      */
     List<StudentDto> queryStudentDtoListByClazzId(Long clazzId);
+
+    /**
+     * 通过搜索学生名称获取学生
+     *
+     * @return
+     */
+    List<StudentDto> getBySearchStudentName(String searchStudentName);
 }

@@ -41,8 +41,8 @@ public class WorkController {
         Long studentId = TransitionUtil.stringToLong(queryWorkRelationRequest.getStudentId());
         List<WorkRelationDto> workRelationDtos = workService.queryWorkRelationDtoByClazzId(clazzId, studentId);
         request.getServletContext().setAttribute("workRelationDtos", workRelationDtos);
-        request.getServletContext().setAttribute("clazzId", clazzId);
-        request.getServletContext().setAttribute("studentId", studentId);
+        request.getServletContext().setAttribute("clazzIdForWork", clazzId);
+        request.getServletContext().setAttribute("studentIdForWork", studentId);
         PrintWriterUtil.print("作业关联查询成功", response);
     }
 
@@ -61,8 +61,8 @@ public class WorkController {
                 .map(WorkDto::getWorkTitle)
                 .distinct()
                 .collect(Collectors.toList());
-        Long clazzId = (Long) request.getServletContext().getAttribute("clazzId");
-        Long studentId = (Long) request.getServletContext().getAttribute("studentId");
+        Long clazzId = (Long) request.getServletContext().getAttribute("clazzIdForWork");
+        Long studentId = (Long) request.getServletContext().getAttribute("studentIdForWork");
         List<WorkRelationDto> workRelationDtos = workService.queryWorkRelationDtoByClazzId(clazzId, studentId);
         workRelationDtos = workRelationDtos.stream()
                 .filter(workRelationDto -> workTitles.contains(workRelationDto.getWorkTitle()))
