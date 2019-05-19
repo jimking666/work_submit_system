@@ -94,4 +94,16 @@ public class WorkServiceImpl implements WorkService {
     public List<WorkDto> getByWorkId(Long workId) {
         return workBizService.getByWorkId(workId);
     }
+
+    @Override
+    public List<WorkDto> getBySearchWorkTitle(String searchWorkTitle) {
+        List<Work> works = workDao.getBySearchWorkTitle(searchWorkTitle);
+        return works.stream()
+                .map(work -> {
+                    WorkDto workDto = new WorkDto();
+                    BeanUtils.copyProperties(work, workDto);
+                    return workDto;
+                })
+                .collect(Collectors.toList());
+    }
 }

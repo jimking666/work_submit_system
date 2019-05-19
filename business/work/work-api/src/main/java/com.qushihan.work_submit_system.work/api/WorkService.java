@@ -38,4 +38,11 @@ public interface WorkService {
      * @return
      */
     List<WorkDto> getByWorkId(Long workId);
+
+    /**
+     * 通过搜索作业题目获取作业
+     *
+     * @return
+     */
+    List<WorkDto> getBySearchWorkTitle(String searchWorkTitle);
 }

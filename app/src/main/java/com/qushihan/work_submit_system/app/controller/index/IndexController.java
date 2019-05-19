@@ -50,7 +50,7 @@ public class IndexController {
     }
 
     /**
-     * 浏览班级页面
+     * 班级详情页面
      *
      * @param request
      *
@@ -58,15 +58,9 @@ public class IndexController {
      */
     @RequestMapping("/browseClazzPage")
     public String forwordBrowseClazzPage(HttpServletRequest request) {
-        List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
-        request.getServletContext().setAttribute("clazzDtos", clazzDtos);
         return "/browseClazzPage";
     }
 
-    @RequestMapping("/browseClazzPageSearch")
-    public String forwordBrowseClazzPageSearch() {
-        return "/browseClazzPage";
-    }
 
     /**
      * 学生详情页面

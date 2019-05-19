@@ -37,6 +37,13 @@ public class ClazzController {
 //        return "mainpage";
 //    }
 
+    /**
+     * 通过班级名称查询班级
+     *
+     * @param getClazzBySearchRequest
+     * @param request
+     * @param response
+     */
     @RequestMapping("/getClazzBySearch")
     public void getClazzBySearch(@RequestBody GetClazzBySearchRequest getClazzBySearchRequest, HttpServletRequest request, HttpServletResponse response) {
         String searchClazzName = getClazzBySearchRequest.getSearchClazzName();

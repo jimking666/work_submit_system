@@ -5,6 +5,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.qushihan.work_submit_system.clazz.api.ClazzService;
+import com.qushihan.work_submit_system.clazz.dto.ClazzDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,6 +32,9 @@ public class StudentController {
 
     @Autowired
     private StudentService studentService;
+
+    @Autowired
+    private ClazzService clazzService;
 
     /**
      * 学生注册
@@ -62,6 +67,8 @@ public class StudentController {
             loginMessage = JudgeLoginStatus.ACCOUNT_DISABLED.getMessage();
         } else {
             loginMessage = JudgeLoginStatus.LOGIN_SUCCESS.getMessage();
+            List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
+            request.getServletContext().setAttribute("clazzDtos", clazzDtos);
             request.getServletContext().setAttribute("studentDto", studentDto);
         }
         PrintWriterUtil.print(loginMessage, response);

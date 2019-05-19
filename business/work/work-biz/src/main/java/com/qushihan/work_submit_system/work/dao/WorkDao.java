@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -67,5 +68,21 @@ public class WorkDao {
         criteria.andWorkIdEqualTo(workId);
         criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
         return workMapper.selectByExample(workExample);
+    }
+
+    /**
+     * 通过作业题目搜索作业
+     *
+     * @param searchWorkTitle
+     * @return
+     */
+    public List<Work> getBySearchWorkTitle(String searchWorkTitle) {
+        WorkExample clazzExample = new WorkExample();
+        WorkExample.Criteria criteria = clazzExample.createCriteria();
+        if (StringUtils.isNotEmpty(searchWorkTitle)) {
+            criteria.andWorkTitleLike(searchWorkTitle + "%");
+        }
+        criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
+        return workMapper.selectByExample(clazzExample);
     }
 }

@@ -1,10 +1,13 @@
 package com.qushihan.work_submit_system.app.controller.work;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.qushihan.work_submit_system.work.dto.GetWorkBySearchRequest;
+import com.qushihan.work_submit_system.work.dto.WorkDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -39,6 +42,32 @@ public class WorkController {
         List<WorkRelationDto> workRelationDtos = workService.queryWorkRelationDtoByClazzId(clazzId, studentId);
         request.getServletContext().setAttribute("workRelationDtos", workRelationDtos);
         request.getServletContext().setAttribute("clazzId", clazzId);
+        request.getServletContext().setAttribute("studentId", studentId);
         PrintWriterUtil.print("作业关联查询成功", response);
+    }
+
+    /**
+     * 通过作业名称查询作业
+     *
+     * @param getWorkBySearchRequest
+     * @param request
+     * @param response
+     */
+    @RequestMapping("/getWorkBySearch")
+    public void getWorkBySearch(@RequestBody GetWorkBySearchRequest getWorkBySearchRequest, HttpServletRequest request, HttpServletResponse response) {
+        String searchWorkTitle = getWorkBySearchRequest.getSearchWorkTitle();
+        List<WorkDto> workDtos = workService.getBySearchWorkTitle(searchWorkTitle);
+        List<String> workTitles = workDtos.stream()
+                .map(WorkDto::getWorkTitle)
+                .distinct()
+                .collect(Collectors.toList());
+        Long clazzId = (Long) request.getServletContext().getAttribute("clazzId");
+        Long studentId = (Long) request.getServletContext().getAttribute("studentId");
+        List<WorkRelationDto> workRelationDtos = workService.queryWorkRelationDtoByClazzId(clazzId, studentId);
+        workRelationDtos = workRelationDtos.stream()
+                .filter(workRelationDto -> workTitles.contains(workRelationDto.getWorkTitle()))
+                .collect(Collectors.toList());
+        request.getServletContext().setAttribute("workRelationDtos", workRelationDtos);
+        PrintWriterUtil.print("查询成功", response);
     }
 }

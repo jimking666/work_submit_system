@@ -74,7 +74,7 @@
                     statusCode: {
                         200: function (data) {
                             if (data.indexOf("查询成功") != -1) {
-                                window.location = "/browseClazzPageSearch"
+                                window.location = "/browseClazzPage"
                             }
                         }
                     }

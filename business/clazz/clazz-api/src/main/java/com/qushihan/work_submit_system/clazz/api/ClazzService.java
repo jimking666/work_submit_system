@@ -41,7 +41,7 @@ public interface ClazzService {
     ClazzDto queryClazzDtoByClazzId(Long clazzId);
 
     /**
-     * 通过搜索获取班级
+     * 通过搜索班级名称获取班级
      *
      * @return
      */

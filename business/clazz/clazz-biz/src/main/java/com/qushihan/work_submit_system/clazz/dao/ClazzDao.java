@@ -66,6 +66,12 @@ public class ClazzDao {
         return clazzMapper.updateByExampleSelective(clazz, clazzExample);
     }
 
+    /**
+     * 通过班级名称搜索班级
+     *
+     * @param searchClazzName
+     * @return
+     */
     public List<Clazz> getBySearchClazzName(String searchClazzName) {
         ClazzExample clazzExample = new ClazzExample();
         ClazzExample.Criteria criteria = clazzExample.createCriteria();
