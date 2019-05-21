@@ -57,15 +57,15 @@ public class WorkController {
     public void getWorkBySearch(@RequestBody GetWorkBySearchRequest getWorkBySearchRequest, HttpServletRequest request, HttpServletResponse response) {
         String searchWorkTitle = getWorkBySearchRequest.getSearchWorkTitle();
         List<WorkDto> workDtos = workService.getBySearchWorkTitle(searchWorkTitle);
-        List<String> workTitles = workDtos.stream()
-                .map(WorkDto::getWorkTitle)
+        List<Long> workIds = workDtos.stream()
+                .map(WorkDto::getWorkId)
                 .distinct()
                 .collect(Collectors.toList());
         Long clazzId = (Long) request.getServletContext().getAttribute("clazzIdForWork");
         Long studentId = (Long) request.getServletContext().getAttribute("studentIdForWork");
         List<WorkRelationDto> workRelationDtos = workService.queryWorkRelationDtoByClazzId(clazzId, studentId);
         workRelationDtos = workRelationDtos.stream()
-                .filter(workRelationDto -> workTitles.contains(workRelationDto.getWorkTitle()))
+                .filter(workRelationDto -> workIds.contains(workRelationDto.getWorkId()))
                 .collect(Collectors.toList());
         request.getServletContext().setAttribute("workRelationDtos", workRelationDtos);
         PrintWriterUtil.print("查询成功", response);

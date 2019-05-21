@@ -7,9 +7,9 @@ import lombok.Data;
  */
 @Data
 public class GetClazzBySearchRequest {
+
     /**
      * 搜索班级名字
      */
     private String searchClazzName;
-
 }

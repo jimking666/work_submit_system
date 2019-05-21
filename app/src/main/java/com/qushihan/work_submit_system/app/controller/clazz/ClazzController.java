@@ -2,6 +2,7 @@ package com.qushihan.work_submit_system.app.controller.clazz;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -24,19 +25,6 @@ public class ClazzController {
     @Autowired
     private ClazzService clazzService;
 
-//    @RequestMapping("/clazzList")
-//    public void clazzList(HttpServletRequest request) {
-//        List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
-//        request.getServletContext().setAttribute("clazzDtos", clazzDtos);
-//    }
-
-//    @RequestMapping("/clazzList")
-//    public String clazzList(Map map) {
-//        List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
-//        map.put("clazzDtos", clazzDtos);
-//        return "mainpage";
-//    }
-
     /**
      * 通过班级名称查询班级
      *
@@ -47,7 +35,14 @@ public class ClazzController {
     @RequestMapping("/getClazzBySearch")
     public void getClazzBySearch(@RequestBody GetClazzBySearchRequest getClazzBySearchRequest, HttpServletRequest request, HttpServletResponse response) {
         String searchClazzName = getClazzBySearchRequest.getSearchClazzName();
-        List<ClazzDto> clazzDtos = clazzService.getBySearchClazzName(searchClazzName);
+        List<ClazzDto> searchClazzDtos = clazzService.getBySearchClazzName(searchClazzName);
+        List<Long> clazzIds = searchClazzDtos.stream()
+                .map(ClazzDto::getClazzId)
+                .collect(Collectors.toList());
+        List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
+        clazzDtos = clazzDtos.stream()
+                .filter(clazzDto -> clazzIds.contains(clazzDto.getClazzId()))
+                .collect(Collectors.toList());
         request.getServletContext().setAttribute("clazzDtos", clazzDtos);
         PrintWriterUtil.print("查询成功", response);
     }

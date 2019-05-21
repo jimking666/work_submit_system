@@ -141,14 +141,14 @@ public class StudentController {
     @RequestMapping("/getStudentBySearch")
     public void getClazzBySearch(@RequestBody GetStudentBySearchRequest getStudentBySearchRequest, HttpServletRequest request, HttpServletResponse response) {
         String searchStudntName = getStudentBySearchRequest.getSearchStudentName();
-        List<StudentDto> studentDtosForSearch = studentService.getBySearchStudentName(searchStudntName);
-        List<String> studentNames = studentDtosForSearch.stream()
-                .map(StudentDto::getStudentName)
+        List<StudentDto> searchStudentDtos = studentService.getBySearchStudentName(searchStudntName);
+        List<Long> studentIds = searchStudentDtos.stream()
+                .map(StudentDto::getStudentId)
                 .collect(Collectors.toList());
         Long clazzId = (Long) request.getServletContext().getAttribute("clazzIdForStudent");
         List<StudentDto> studentDtos = studentService.queryStudentDtoListByClazzId(clazzId);
         studentDtos = studentDtos.stream()
-                .filter(studentDto -> studentNames.contains(studentDto.getStudentName()))
+                .filter(studentDto -> studentIds.contains(studentDto.getStudentId()))
                 .collect(Collectors.toList());
         request.getServletContext().setAttribute("studentDtos", studentDtos);
         PrintWriterUtil.print("查询成功", response);

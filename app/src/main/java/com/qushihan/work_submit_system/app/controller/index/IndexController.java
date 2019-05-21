@@ -1,23 +1,11 @@
 package com.qushihan.work_submit_system.app.controller.index;
 
-import java.util.List;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.qushihan.work_submit_system.clazz.api.ClazzService;
-import com.qushihan.work_submit_system.clazz.dto.ClazzDto;
-
-import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/index")
 public class IndexController {
-
-    @Autowired
-    private ClazzService clazzService;
 
     /**
      * 登陆页面
@@ -52,12 +40,10 @@ public class IndexController {
     /**
      * 班级详情页面
      *
-     * @param request
-     *
      * @return
      */
     @RequestMapping("/browseClazzPage")
-    public String forwordBrowseClazzPage(HttpServletRequest request) {
+    public String forwordBrowseClazzPage() {
         return "/browseClazzPage";
     }
 
