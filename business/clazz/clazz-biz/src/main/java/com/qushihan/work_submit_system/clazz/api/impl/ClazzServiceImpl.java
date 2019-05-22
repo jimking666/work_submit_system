@@ -43,7 +43,7 @@ public class ClazzServiceImpl implements ClazzService {
         if (CollectionUtils.isEmpty(clazzes)) {
             return ClazzErrorCode.NO_SUCH_CLAZZ.getMessage();
         }
-        Clazz clazz = clazzes.stream().findFirst().orElse(null);
+        Clazz clazz = clazzes.stream().findFirst().orElse(new Clazz());
         Long count = clazz.getStudentCount();
         clazz.setStudentCount(count + 1);
         clazzDao.studentCountIncrease(clazz, clazzId);

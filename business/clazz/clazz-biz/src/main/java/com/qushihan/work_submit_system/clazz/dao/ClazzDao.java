@@ -53,16 +53,17 @@ public class ClazzDao {
      * @param clazz
      * @param clazzId
      */
-    public Integer studentCountIncrease(Clazz clazz, Long clazzId) {
-        if (Optional.ofNullable(clazz).isPresent()) {
+    public int studentCountIncrease(Clazz clazz, Long clazzId) {
+        if (!Optional.ofNullable(clazz).isPresent()) {
             return 0;
         }
-        if (Optional.ofNullable(clazzId).isPresent()) {
+        if (!Optional.ofNullable(clazzId).isPresent()) {
             return 0;
         }
         ClazzExample clazzExample = new ClazzExample();
         ClazzExample.Criteria criteria = clazzExample.createCriteria();
         criteria.andClazzIdEqualTo(clazzId);
+        criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
         return clazzMapper.updateByExampleSelective(clazz, clazzExample);
     }
 

@@ -79,6 +79,12 @@ public class StudentController {
     @GetMapping("/logout")
     public void logoutStudent(HttpServletRequest request, HttpServletResponse response) {
         request.getServletContext().removeAttribute("studentDto");
+        request.getServletContext().removeAttribute("studentDtos");
+        request.getServletContext().removeAttribute("clazzDtos");
+        request.getServletContext().removeAttribute("clazzIdForStudent");
+        request.getServletContext().removeAttribute("studentIdForWork");
+        request.getServletContext().removeAttribute("clazzIdForWork");
+        request.getServletContext().removeAttribute("workRelationDtos");
     }
 
     /**
@@ -93,7 +99,9 @@ public class StudentController {
         String joinMessage = studentService.studentJoinClazz(studentJoinClazzRequest);
         Long studentId = TransitionUtil.stringToLong(studentJoinClazzRequest.getStudentId());
         StudentDto studentDto = studentService.queryStudentByStudentId(studentId);
+        List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
         request.getServletContext().setAttribute("studentDto", studentDto);
+        request.getServletContext().setAttribute("clazzDtos", clazzDtos);
         PrintWriterUtil.print(joinMessage, response);
     }
 
@@ -110,7 +118,9 @@ public class StudentController {
         Long studentId = TransitionUtil.stringToLong(studentQuitClazzRequest.getStudentId());
         String quitMessage = studentService.studentQuitClazz(studentId);
         StudentDto studentDto = studentService.queryStudentByStudentId(studentId);
+        List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
         request.getServletContext().setAttribute("studentDto", studentDto);
+        request.getServletContext().setAttribute("clazzDtos", clazzDtos);
         PrintWriterUtil.print(quitMessage, response);
     }
 
