@@ -196,12 +196,7 @@
                 <#if studentDto??>
                     学生: ${studentDto.studentName}
                 <#else>
-                    <a class="btn btn-default" href="/">请您先去登陆!</a>
-                </#if>
-            </p>
-            <p>
-                <#if studentDto??>
-                    <button class="btn btn-danger" id="logout">退出登陆</button>
+                    <a class="btn btn-default" href="/">请您先去登录!</a>
                 </#if>
             </p>
             <p>
@@ -214,11 +209,20 @@
                 </#if>
             </p>
         </div>
-        <div class="meun-title">学生操作</div>
+        <div class="meun-title">当前页面</div>
         <div class="meun-item meun-item-active" id="zyxq">作业详情</div>
+        <div class="meun-title">学生操作</div>
+        <div class="meun-title">
+            <#if studentDto??>
+                <button class="btn btn-danger" id="logout">退出登录</button>
+            </#if>
+        </div>
+        <div class="meun-item">
+            <button class="btn btn-primary" id="goBackBrowseClazzPage">
+                主页面
+            </button>
+        </div>
     </div>
-
-
     <div id="rightContent">
         <!--发布作业详情-->
         <div class="gl zuoyexiangqing">
@@ -414,34 +418,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="dao">
-            <nav aria-label="Page navigation">
-                <button class="btn btn-primary" id="goBackBrowseClazzPage">
-                    主页面
-                </button>
-            </nav>
-        </div>
-        <div class="dao">
-            <nav aria-label="Page navigation">
-                <ul class="pagination">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
 </div>

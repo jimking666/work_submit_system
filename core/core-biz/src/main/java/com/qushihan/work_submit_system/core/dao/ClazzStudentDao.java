@@ -23,7 +23,7 @@ public class ClazzStudentDao {
      *
      * @return
      */
-    public Integer increaseRecord(ClazzStudent clazzStudent) {
+    public int increaseRecord(ClazzStudent clazzStudent) {
         return clazzStudentMapper.insertSelective(clazzStudent);
     }
 

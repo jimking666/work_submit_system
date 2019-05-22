@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
 import com.google.common.collect.Lists;
@@ -76,6 +77,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional(rollbackFor = RuntimeException.class)
     public String studentJoinClazz(StudentJoinClazzRequest studentJoinClazzRequest) {
         Long studentId = TransitionUtil.stringToLong(studentJoinClazzRequest.getStudentId());
         Long clazzId = TransitionUtil.stringToLong(studentJoinClazzRequest.getClazzId());
