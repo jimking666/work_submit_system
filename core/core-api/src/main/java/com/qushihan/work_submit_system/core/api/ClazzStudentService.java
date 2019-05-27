@@ -21,14 +21,14 @@ public interface ClazzStudentService {
      *
      * @return
      */
-    ClazzStudentDto queryClazzStudentByStudentId(Long studentId);
+    ClazzStudentDto getByStudentId(Long studentId);
 
     /**
-     * 根据studentId将ClazzStudent记录删除
+     * 根据clazzStudentId将ClazzStudent记录更改
      *
-     * @param studentId
+     * @param clazzStudentId
      *
      * @return
      */
-    Integer deleteClazzStudentByStudentId(Long studentId);
+    int updateByClazzStudentId(ClazzStudentDto clazzStudentDto, Long clazzStudentId);
 }

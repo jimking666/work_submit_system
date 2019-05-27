@@ -404,8 +404,8 @@
                     <#--将保存按钮放在表单外，若不这样不能通过js阻塞表单提交-->
                         <div class="form-container">
                             <div class="form-group">
-                                <#if studentDto?? && clazzId??>
-                                    <button class="btn btn-primary btn-block form-container" onclick="saveSubmitWork('${studentDto.studentId}','${clazzId}')">
+                                <#if studentDto?? && clazzIdForWork??>
+                                    <button class="btn btn-primary btn-block form-container" onclick="saveSubmitWork('${studentDto.studentId}','${clazzIdForWork}')">
                                         保存
                                     </button>
                                 </#if>

@@ -1,16 +1,17 @@
 package com.qushihan.work_submit_system.student.api.impl;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import com.qushihan.work_submit_system.inf.enums.FieldIsdelStatus;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
-import com.google.common.collect.Lists;
 import com.qushihan.work_submit_system.clazz.api.ClazzService;
 import com.qushihan.work_submit_system.clazz.dto.ClazzDto;
 import com.qushihan.work_submit_system.clazz.enums.StudentCountIncreaseStatus;
@@ -62,18 +63,20 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public StudentDto loginStudent(LoginStudentRequest loginStudentRequest) {
+    public List<StudentDto> loginStudent(Long studentNumber, String studentPassword) {
         List<Student> students = studentDao.queryStudentByStudentNumberAndStudentPassword(
-                loginStudentRequest.getStudentNumber(), loginStudentRequest.getStudentPassword());
-        Student student = students.stream().findFirst().orElse(null);
-        if (Optional.ofNullable(student).isPresent()) {
-            StudentDto studentDto = new StudentDto();
-            BeanUtils.copyProperties(student, studentDto);
-            ClazzDto clazzDto = clazzService.queryClazzDtoByClazzId(student.getClazzId());
-            studentDto.setClazzName(clazzDto.getClazzName());
-            return studentDto;
+                studentNumber, studentPassword);
+        if (CollectionUtils.isEmpty(students)) {
+            return Collections.emptyList();
         }
-        return new StudentDto();
+        return students.stream()
+                .map(student -> {
+                    StudentDto studentDto = new StudentDto();
+                    BeanUtils.copyProperties(student, studentDto);
+                    ClazzDto clazzDto = clazzService.getByClazzId(student.getClazzId());
+                    studentDto.setClazzName(clazzDto.getClazzName());
+                    return studentDto;
+                }).collect(Collectors.toList());
     }
 
     @Override
@@ -94,20 +97,22 @@ public class StudentServiceImpl implements StudentService {
         // 学生表班级字段更改
         Student student = new Student();
         student.setClazzId(clazzId);
-        studentDao.updateStudentInfo(studentId, student);
+        studentDao.updateByStudentId(studentId, student);
         return StudentJoinClazzStatus.JOIN_SUCCESS.getMessge();
     }
 
     @Override
+    @Transactional(rollbackFor = RuntimeException.class)
     public String studentQuitClazz(Long studentId) {
         // 学生表班级id字段更改为空
         studentDao.setClazzIdNullByStudentId(studentId);
-        // 先将clazzStudent表中记录查询出来得到clazzId
-        ClazzStudentDto clazzStudentDto = clazzStudentService.queryClazzStudentByStudentId(studentId);
-        Long clazzId = clazzStudentDto.getClazzId();
-        // 将clazzStudent表中记录进行物理删除
-        clazzStudentService.deleteClazzStudentByStudentId(studentId);
+        // 先将clazzStudent表中记录查询出来
+        ClazzStudentDto clazzStudentDto = clazzStudentService.getByStudentId(studentId);
+        clazzStudentDto.setIsdel(FieldIsdelStatus.ISDEL_TRUE.getIsdel());
+        // 将clazzStudent表中记录进行软删除
+        clazzStudentService.updateByClazzStudentId(clazzStudentDto, clazzStudentDto.getClazzStudentId());
         // 通过clazzId将学生数量减去1
+        Long clazzId = clazzStudentDto.getClazzId();
         clazzService.studentCountSubtract(clazzId);
         return StudentQuitClazzStatus.QUIT_SUCCESS.getMessge();
     }
@@ -122,7 +127,7 @@ public class StudentServiceImpl implements StudentService {
         if (Optional.ofNullable(student).isPresent()) {
             StudentDto studentDto = new StudentDto();
             BeanUtils.copyProperties(student, studentDto);
-            ClazzDto clazzDto = clazzService.queryClazzDtoByClazzId(student.getClazzId());
+            ClazzDto clazzDto = clazzService.getByClazzId(student.getClazzId());
             studentDto.setClazzName(clazzDto.getClazzName());
             return studentDto;
         }
@@ -134,7 +139,7 @@ public class StudentServiceImpl implements StudentService {
         List<Student> students = studentDao.queryStudentListByClazzId(clazzId);
         List<StudentDto> studentDtos = students.stream().map(student -> {
             StudentDto studentDto = new StudentDto();
-            ClazzDto clazzDto = clazzService.queryClazzDtoByClazzId(student.getClazzId());
+            ClazzDto clazzDto = clazzService.getByClazzId(student.getClazzId());
             studentDto.setClazzName(clazzDto.getClazzName());
             BeanUtils.copyProperties(student, studentDto);
             return studentDto;

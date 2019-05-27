@@ -23,9 +23,11 @@ public interface StudentService {
     /**
      * 学生登陆
      *
-     * @param loginStudentRequest
+     * @param studentNumber
+     * @param studentPassword
+     * @return
      */
-    StudentDto loginStudent(LoginStudentRequest loginStudentRequest);
+    List<StudentDto> loginStudent(Long studentNumber, String studentPassword);
 
     /**
      * 学生加入班级

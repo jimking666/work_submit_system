@@ -33,22 +33,23 @@ public class ClazzStudentServiceImpl implements ClazzStudentService {
     }
 
     @Override
-    public ClazzStudentDto queryClazzStudentByStudentId(Long studentId) {
-        List<ClazzStudent> clazzStudents = clazzStudentDao.queryClazzStudentListByStudentId(studentId);
+    public ClazzStudentDto getByStudentId(Long studentId) {
+        List<ClazzStudent> clazzStudents = clazzStudentDao.getByStudentId(studentId);
         if (CollectionUtils.isEmpty(clazzStudents)) {
-            return null;
+            return new ClazzStudentDto();
         }
-        ClazzStudent clazzStudent = clazzStudents.stream().findFirst().orElse(null);
-        if (clazzStudent != null) {
-            ClazzStudentDto clazzStudentDto = new ClazzStudentDto();
-            BeanUtils.copyProperties(clazzStudent, clazzStudentDto);
-            return clazzStudentDto;
-        }
-        return null;
+        ClazzStudent clazzStudent = clazzStudents.stream()
+                .findFirst()
+                .orElse(new ClazzStudent());
+        ClazzStudentDto clazzStudentDto = new ClazzStudentDto();
+        BeanUtils.copyProperties(clazzStudent, clazzStudentDto);
+        return clazzStudentDto;
     }
 
     @Override
-    public Integer deleteClazzStudentByStudentId(Long studentId) {
-        return clazzStudentDao.deleteClazzStudentByStudentId(studentId);
+    public int updateByClazzStudentId(ClazzStudentDto clazzStudentDto, Long clazzStudentId) {
+        ClazzStudent clazzStudent = new ClazzStudent();
+        BeanUtils.copyProperties(clazzStudentDto, clazzStudent);
+        return clazzStudentDao.updateByClazzStudentId(clazzStudent, clazzStudentId);
     }
 }

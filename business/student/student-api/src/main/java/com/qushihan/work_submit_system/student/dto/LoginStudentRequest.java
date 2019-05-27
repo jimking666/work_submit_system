@@ -11,7 +11,7 @@ public class LoginStudentRequest {
     /**
      * 学号
      */
-    private Long studentNumber;
+    private String studentNumber;
 
     /**
      * 密码

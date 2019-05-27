@@ -39,7 +39,7 @@ public class ClazzServiceImpl implements ClazzService {
 
     @Override
     public String studentCountIncrease(Long clazzId) {
-        List<Clazz> clazzes = clazzDao.queryClazzListByClazzId(clazzId);
+        List<Clazz> clazzes = clazzDao.getByClazzId(clazzId);
         if (CollectionUtils.isEmpty(clazzes)) {
             return ClazzErrorCode.NO_SUCH_CLAZZ.getMessage();
         }
@@ -51,24 +51,24 @@ public class ClazzServiceImpl implements ClazzService {
     }
 
     @Override
-    public Integer studentCountSubtract(Long clazzId) {
-        List<Clazz> clazzes = clazzDao.queryClazzListByClazzId(clazzId);
-        Clazz clazz = clazzes.stream().findFirst().orElse(null);
+    public int studentCountSubtract(Long clazzId) {
+        List<Clazz> clazzes = clazzDao.getByClazzId(clazzId);
+        Clazz clazz = clazzes.stream().findFirst().orElse(new Clazz());
         Long count = clazz.getStudentCount();
         clazz.setStudentCount(count - 1);
         return clazzDao.studentCountIncrease(clazz, clazzId);
     }
 
     @Override
-    public ClazzDto queryClazzDtoByClazzId(Long clazzId) {
-        List<Clazz> clazzes = clazzDao.queryClazzListByClazzId(clazzId);
-        Clazz clazz = clazzes.stream().findFirst().orElse(null);
-        if (Optional.ofNullable(clazz).isPresent()) {
-            ClazzDto clazzDto = new ClazzDto();
-            BeanUtils.copyProperties(clazz, clazzDto);
-            return clazzDto;
+    public ClazzDto getByClazzId(Long clazzId) {
+        List<Clazz> clazzes = clazzDao.getByClazzId(clazzId);
+        if (CollectionUtils.isEmpty(clazzes)) {
+            return new ClazzDto();
         }
-        return new ClazzDto();
+        Clazz clazz = clazzes.stream().findFirst().orElse(new Clazz());
+        ClazzDto clazzDto = new ClazzDto();
+        BeanUtils.copyProperties(clazz, clazzDto);
+        return clazzDto;
     }
 
     @Override

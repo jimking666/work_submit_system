@@ -1,6 +1,8 @@
 package com.qushihan.work_submit_system.core.dao;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -28,17 +30,23 @@ public class ClazzStudentDao {
     }
 
     /**
-     * 根据studentId将ClazzStudent记录删除
+     * 根据clazzStudentId更改ClazzStudent记录
      *
-     * @param studentId
+     * @param clazzStudentId
      *
      * @return
      */
-    public Integer deleteClazzStudentByStudentId(Long studentId) {
+    public int updateByClazzStudentId(ClazzStudent clazzStudent, Long clazzStudentId) {
+        if (!Optional.ofNullable(clazzStudent).isPresent()) {
+            return 0;
+        }
+        if (!Optional.ofNullable(clazzStudentId).isPresent()) {
+            return 0;
+        }
         ClazzStudentExample clazzStudentExample = new ClazzStudentExample();
         ClazzStudentExample.Criteria criteria = clazzStudentExample.createCriteria();
-        criteria.andStudentIdEqualTo(studentId);
-        return clazzStudentMapper.deleteByExample(clazzStudentExample);
+        criteria.andClazzStudentIdEqualTo(clazzStudentId);
+        return clazzStudentMapper.updateByExampleSelective(clazzStudent, clazzStudentExample);
     }
 
     /**
@@ -48,7 +56,10 @@ public class ClazzStudentDao {
      *
      * @return
      */
-    public List<ClazzStudent> queryClazzStudentListByStudentId(Long studentId) {
+    public List<ClazzStudent> getByStudentId(Long studentId) {
+        if (!Optional.ofNullable(studentId).isPresent()) {
+            return Collections.emptyList();
+        }
         ClazzStudentExample clazzStudentExample = new ClazzStudentExample();
         ClazzStudentExample.Criteria criteria = clazzStudentExample.createCriteria();
         criteria.andStudentIdEqualTo(studentId);

@@ -44,6 +44,12 @@ public class StudentDao {
      * @return
      */
     public List<Student> queryStudentByStudentNumberAndStudentPassword(Long studentNumber, String studentPassword) {
+        if (!Optional.ofNullable(studentNumber).isPresent()) {
+            return Collections.emptyList();
+        }
+        if (StringUtils.isEmpty(studentPassword)) {
+            return Collections.emptyList();
+        }
         StudentExample example = new StudentExample();
         StudentExample.Criteria criteria = example.createCriteria();
         criteria.andStudentNumberEqualTo(studentNumber);
@@ -74,11 +80,17 @@ public class StudentDao {
      *
      * @return
      */
-    public Integer updateStudentInfo(Long studentId, Student student) {
-        StudentExample example = new StudentExample();
-        StudentExample.Criteria criteria = example.createCriteria();
+    public int updateByStudentId(Long studentId, Student student) {
+        if (!Optional.ofNullable(studentId).isPresent()) {
+            return 0;
+        }
+        if (!Optional.ofNullable(student).isPresent()) {
+            return 0;
+        }
+        StudentExample studentExample = new StudentExample();
+        StudentExample.Criteria criteria = studentExample.createCriteria();
         criteria.andStudentIdEqualTo(studentId);
-        return studentMapper.updateByExampleSelective(student, example);
+        return studentMapper.updateByExampleSelective(student, studentExample);
     }
 
     /**

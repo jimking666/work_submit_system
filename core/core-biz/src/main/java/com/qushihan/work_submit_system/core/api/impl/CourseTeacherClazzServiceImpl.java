@@ -46,7 +46,7 @@ public class CourseTeacherClazzServiceImpl implements CourseTeacherClazzService 
             BeanUtils.copyProperties(courseTeacherClazz, courseTeacherClazzDto);
             CourseDto courseDto = courseService.queryCourseDtoByCourseId(courseTeacherClazz.getCourseId());
             TeacherDto teacherDto = teacherService.queryTeacherDtoByTeacherId(courseTeacherClazz.getTeacherId());
-            ClazzDto clazzDto = clazzService.queryClazzDtoByClazzId(courseTeacherClazz.getClazzId());
+            ClazzDto clazzDto = clazzService.getByClazzId(courseTeacherClazz.getClazzId());
             courseTeacherClazzDto.setCourseName(courseDto.getCourseName());
             courseTeacherClazzDto.setTeacherName(teacherDto.getTeacherName());
             courseTeacherClazzDto.setClazzName(clazzDto.getClazzName());

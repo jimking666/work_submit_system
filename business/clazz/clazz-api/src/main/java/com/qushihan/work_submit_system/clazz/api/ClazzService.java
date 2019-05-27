@@ -29,7 +29,7 @@ public interface ClazzService {
      *
      * @return
      */
-    Integer studentCountSubtract(Long clazzId);
+    int studentCountSubtract(Long clazzId);
 
     /**
      * 通过班级id查询班级dto
@@ -38,7 +38,7 @@ public interface ClazzService {
      *
      * @return
      */
-    ClazzDto queryClazzDtoByClazzId(Long clazzId);
+    ClazzDto getByClazzId(Long clazzId);
 
     /**
      * 通过搜索班级名称获取班级

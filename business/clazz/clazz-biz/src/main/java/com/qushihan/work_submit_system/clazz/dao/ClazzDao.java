@@ -36,9 +36,9 @@ public class ClazzDao {
      *
      * @return
      */
-    public List<Clazz> queryClazzListByClazzId(Long clazzId) {
+    public List<Clazz> getByClazzId(Long clazzId) {
         if (!Optional.ofNullable(clazzId).isPresent()) {
-            return Collections.EMPTY_LIST;
+            return Collections.emptyList();
         }
         ClazzExample clazzExample = new ClazzExample();
         ClazzExample.Criteria criteria = clazzExample.createCriteria();

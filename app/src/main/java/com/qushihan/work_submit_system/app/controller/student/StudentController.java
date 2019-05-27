@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServletResponse;
 import com.qushihan.work_submit_system.clazz.api.ClazzService;
 import com.qushihan.work_submit_system.clazz.dto.ClazzDto;
 import com.qushihan.work_submit_system.student.dto.*;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -55,17 +57,25 @@ public class StudentController {
     @PostMapping("/login")
     public void loginStudent(@RequestBody LoginStudentRequest loginStudentRequest, HttpServletRequest request,
             HttpServletResponse response) {
-        StudentDto studentDto = studentService.loginStudent(loginStudentRequest);
-        String loginMessage = JudgeLoginStatus.UNKNOW.getMessage();
-        if (studentDto == null) {
-            loginMessage = JudgeLoginStatus.NUMBER_OR_PASSWORD_ERROR.getMessage();
-        } else if (studentDto.getIsdel()) {
-            loginMessage = JudgeLoginStatus.ACCOUNT_DISABLED.getMessage();
+        String loginMessage = "";
+        String studentNumberOfString = loginStudentRequest.getStudentNumber();
+        String studentPassword = loginStudentRequest.getStudentPassword();
+        if (!StringUtils.isNumeric(studentNumberOfString)) {
+            loginMessage = JudgeLoginStatus.FORMAT_ERROR.getMessage();
         } else {
-            loginMessage = JudgeLoginStatus.LOGIN_SUCCESS.getMessage();
-            List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
-            request.getServletContext().setAttribute("clazzDtos", clazzDtos);
-            request.getServletContext().setAttribute("studentDto", studentDto);
+            Long studentNumber = TransitionUtil.stringToLong(studentNumberOfString);
+            List<StudentDto> studentDtos = studentService.loginStudent(studentNumber, studentPassword);
+            if (CollectionUtils.isEmpty(studentDtos)) {
+                loginMessage = JudgeLoginStatus.NUMBER_OR_PASSWORD_ERROR.getMessage();
+            } else {
+                loginMessage = JudgeLoginStatus.LOGIN_SUCCESS.getMessage();
+                StudentDto studentDto = studentDtos.stream()
+                        .findFirst()
+                        .orElse(new StudentDto());
+                List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
+                request.getServletContext().setAttribute("clazzDtos", clazzDtos);
+                request.getServletContext().setAttribute("studentDto", studentDto);
+            }
         }
         PrintWriterUtil.print(loginMessage, response);
     }

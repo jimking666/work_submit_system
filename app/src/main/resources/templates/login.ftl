@@ -45,10 +45,10 @@
                             200: function (data) {
                                 if (data.indexOf("登陆成功") != -1) {
                                     window.location = "/browseClazzPage"
-                                } else if (data.indexOf("账号禁用") != -1) {
+                                } else if (data.indexOf("格式错误") != -1) {
                                     $("#studentNumber").val("")
+                                    $("#studentNumberError").html("&nbsp&nbsp&nbsp&nbsp学 号 只 能 是 数 字 !")
                                     $("#studentPassword").val("")
-                                    alert(data)
                                 } else if (data.indexOf("账号或密码错误") != -1) {
                                     $("#studentNumber").val("")
                                     $("#studentPassword").val("")

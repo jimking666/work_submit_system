@@ -10,11 +10,6 @@ import lombok.Getter;
 public enum JudgeLoginStatus {
 
     /**
-     * 未知错误
-     */
-    UNKNOW(-1, "未知错误"),
-
-    /**
      * 登陆成功
      */
     LOGIN_SUCCESS(0, "登陆成功"),
@@ -25,9 +20,10 @@ public enum JudgeLoginStatus {
     NUMBER_OR_PASSWORD_ERROR(1, "账号或密码错误"),
 
     /**
-     * 账号禁用
+     * 格式错误
      */
-    ACCOUNT_DISABLED(2, "账号禁用");
+    FORMAT_ERROR(3, "格式错误"),
+    ;
 
     @Getter
     private Integer code;
