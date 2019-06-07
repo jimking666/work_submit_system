@@ -80,6 +80,7 @@ public class SubmitWorkServiceImpl implements SubmitWorkService {
         newSubmitWork.setSubmitWorkContent(submitWorkContent);
         newSubmitWork.setWorkId(workId);
         newSubmitWork.setStudentId(studentId);
+        newSubmitWork.setHighRepetitiveRate(maxRepetitiveRate);
         submitWorkDao.addSubmitWork(newSubmitWork);
         // 将work表中的该workId作业总数
         List<SubmitWorkDto> submitWorkDtos = submitWorkBizService.getByWorkId(workId);

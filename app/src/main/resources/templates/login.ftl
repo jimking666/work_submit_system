@@ -49,6 +49,7 @@
                                     $("#studentNumber").val("")
                                     $("#studentNumberError").html("&nbsp&nbsp&nbsp&nbsp学 号 只 能 是 数 字 !")
                                     $("#studentPassword").val("")
+                                    $("#studentPasswordError").html("&nbsp&nbsp&nbsp&nbsp*")
                                 } else if (data.indexOf("账号或密码错误") != -1) {
                                     $("#studentNumber").val("")
                                     $("#studentPassword").val("")

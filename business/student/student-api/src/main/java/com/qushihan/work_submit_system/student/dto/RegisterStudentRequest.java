@@ -11,7 +11,7 @@ public class RegisterStudentRequest {
     /**
      * 学号
      */
-    private Long studentNumber;
+    private String studentNumber;
 
     /**
      * 密码

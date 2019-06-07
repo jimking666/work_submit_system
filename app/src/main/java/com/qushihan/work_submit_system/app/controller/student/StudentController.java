@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.qushihan.work_submit_system.clazz.api.ClazzService;
 import com.qushihan.work_submit_system.clazz.dto.ClazzDto;
 import com.qushihan.work_submit_system.student.dto.*;
+import com.qushihan.work_submit_system.student.enums.JudgeRegisterStatus;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
@@ -43,7 +44,16 @@ public class StudentController {
     @PostMapping("/register")
     public void registerStudent(@RequestBody RegisterStudentRequest registerStudentRequest,
             HttpServletResponse response) {
-        String registerMessge = studentService.registerStudent(registerStudentRequest);
+        String registerMessge = "";
+        String studentNumberOfString = registerStudentRequest.getStudentNumber();
+        if (!StringUtils.isNumeric(studentNumberOfString)) {
+            registerMessge = JudgeRegisterStatus.FORMAT_ERROR.getMessge();
+        } else {
+            Long studentNumber = Long.parseLong(studentNumberOfString);
+            String studentPassword = registerStudentRequest.getStudentPassword();
+            String studentName = registerStudentRequest.getStudentName();
+            registerMessge = studentService.registerStudent(studentNumber, studentPassword, studentName);
+        }
         PrintWriterUtil.print(registerMessge, response);
     }
 
@@ -63,7 +73,7 @@ public class StudentController {
         if (!StringUtils.isNumeric(studentNumberOfString)) {
             loginMessage = JudgeLoginStatus.FORMAT_ERROR.getMessage();
         } else {
-            Long studentNumber = TransitionUtil.stringToLong(studentNumberOfString);
+            Long studentNumber = Long.parseLong(studentNumberOfString);
             List<StudentDto> studentDtos = studentService.loginStudent(studentNumber, studentPassword);
             if (CollectionUtils.isEmpty(studentDtos)) {
                 loginMessage = JudgeLoginStatus.NUMBER_OR_PASSWORD_ERROR.getMessage();

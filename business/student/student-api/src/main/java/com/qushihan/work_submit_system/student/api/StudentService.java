@@ -14,11 +14,12 @@ public interface StudentService {
     /**
      * 学生注册
      *
-     * @param registerStudentRequest
-     *
+     * @param studentNumber
+     * @param studentPassword
+     * @param studentName
      * @return
      */
-    String registerStudent(RegisterStudentRequest registerStudentRequest);
+    String registerStudent(Long studentNumber, String studentPassword, String studentName);
 
     /**
      * 学生登陆

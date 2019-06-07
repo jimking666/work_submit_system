@@ -44,8 +44,7 @@ public class StudentServiceImpl implements StudentService {
     private ClazzService clazzService;
 
     @Override
-    public String registerStudent(RegisterStudentRequest registerStudentRequest) {
-        Long studentNumber = registerStudentRequest.getStudentNumber();
+    public String registerStudent(Long studentNumber, String studentPassword, String studentName) {
         // 检查是否重复注册
         List<Student> students = studentDao.judgeRepeatRegister(studentNumber);
         if (!CollectionUtils.isEmpty(students)) {
@@ -56,8 +55,8 @@ public class StudentServiceImpl implements StudentService {
         Student student = new Student();
         student.setStudentId(studentId);
         student.setStudentNumber(studentNumber);
-        student.setStudentPassword(registerStudentRequest.getStudentPassword());
-        student.setStudentName(registerStudentRequest.getStudentName());
+        student.setStudentPassword(studentPassword);
+        student.setStudentName(studentName);
         studentDao.registerStudent(student);
         return JudgeRegisterStatus.REGISTER_SUCCESS.getMessge();
     }

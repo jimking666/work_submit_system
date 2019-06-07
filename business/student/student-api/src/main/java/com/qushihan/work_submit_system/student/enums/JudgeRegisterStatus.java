@@ -17,7 +17,13 @@ public enum JudgeRegisterStatus {
     /**
      * 重复注册
      */
-    REPEAT_EXIST(1, "重复注册");;
+    REPEAT_EXIST(1, "重复注册"),
+
+    /**
+     * 格式错误
+     */
+    FORMAT_ERROR(3, "格式错误"),
+    ;
 
     @Getter
     private Integer code;

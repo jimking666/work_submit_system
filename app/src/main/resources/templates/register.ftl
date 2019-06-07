@@ -53,6 +53,13 @@
                                 if (data.indexOf("注册成功") != -1) {
                                     alert(data)
                                     window.location = "/"
+                                } else if (data.indexOf("格式错误") != -1) {
+                                    $("#studentNumber").val("")
+                                    $("#studentNumberError").html("&nbsp&nbsp&nbsp&nbsp学 号 只 能 是 数 字 !")
+                                    $("#studentPassword").val("")
+                                    $("#studentPasswordError").html("&nbsp&nbsp&nbsp&nbsp*")
+                                    $("#studentName").val("")
+                                    $("#studentNameError").html("&nbsp&nbsp&nbsp&nbsp*")
                                 } else if (data.indexOf("重复注册") != -1) {
                                     $("#studentNumberError").html("&nbsp&nbsp&nbsp&nbsp此 学 号 已 被 注 册 !")
                                 }
