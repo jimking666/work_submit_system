@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99134672-e638-4026-b755-2776e34aad3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/templates/register.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/templates/register.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/api/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/api/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/RegisterStudentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/RegisterStudentRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/JudgeRegisterStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/JudgeRegisterStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/api/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/api/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/dto/RegisterStudentRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/dto/RegisterStudentRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/enums/JudgeRegisterStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/enums/JudgeRegisterStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/student/student-biz/target/classes/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-biz/target/classes/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/submitwork/submitwork-biz/target/classes/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/submitwork/submitwork-biz/target/classes/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/core-biz/target/classes/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/core-biz/target/classes/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/mapper/auto/ClazzMapper.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/app/target/" />
@@ -52,18 +39,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/submitwork/SubmitWorkController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="528">
               <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
             </state>
           </provider>
@@ -72,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2064">
-              <caret line="108" column="102" selection-start-line="108" selection-start-column="102" selection-end-line="108" selection-end-column="102" />
+            <state relative-caret-position="505">
+              <caret line="119" column="3" selection-start-line="119" selection-start-column="3" selection-end-line="121" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +59,17 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/resources/generatorConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1224" />
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/util/DuplicateCheckingUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="552">
               <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -279,6 +264,17 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="clazz-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="clazz-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="teacher-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -311,7 +307,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -397,7 +393,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -657,6 +652,30 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="clazz" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="clazz" type="462c0819:PsiDirectoryNode" />
+              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clazz" type="462c0819:PsiDirectoryNode" />
+              <item name="auto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="clazz" type="462c0819:PsiDirectoryNode" />
+              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="clazz" type="462c0819:PsiDirectoryNode" />
+              <item name="auto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
@@ -1228,6 +1247,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1239,7 +1259,7 @@
     <property name="SearchEverywhereHistoryKey" value="JudgeLoginStatus&#9;FILE&#9;file://C:/Users/JimKing/IdeaProjects/work_submit_system/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/JudgeLoginStatus.java&#10;SubmitWork&#9;FILE&#9;file:///Users/bjhl/IdeaProjects/work_submit_system/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/model/auto/SubmitWork.java&#10;StudentDto&#9;PSI&#9;JAVA://com.qushihan.work_submit_system.student.dto.StudentDto&#10;StudentBizMapper&#9;FILE&#9;file:///Users/bjhl/IdeaProjects/work_submit_system/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/mapper/biz/StudentBizMapper.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558942469094" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560436796627" />
     <property name="last_opened_file_path" value="C:/公司/mojito" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1334,11 +1354,15 @@
       <workItem from="1559199388856" duration="1534000" />
       <workItem from="1559294760161" duration="1354000" />
       <workItem from="1559378608687" duration="675000" />
+      <workItem from="1559896111440" duration="691000" />
+      <workItem from="1560167733518" duration="2332000" />
+      <workItem from="1560184890457" duration="132000" />
+      <workItem from="1560405296901" duration="1579000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332792000" />
+    <option name="totallyTimeSpent" value="337526000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1350,10 +1374,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1721" height="695" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1721" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26217678" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18701142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1363,14 +1386,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33285093" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33211678" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.40875912" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.32997987" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3299566" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28364688" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4908759" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" weight="0.40955138" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32706222" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32997987" />
@@ -1381,7 +1404,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.2533512" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.25315696" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -1399,13 +1422,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/browseClazzPage.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="186" column="18" selection-start-line="186" selection-start-column="18" selection-end-line="186" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.14/tomcat-embed-core-9.0.14.jar!/javax/servlet/http/HttpServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
@@ -1683,10 +1699,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/submitwork/SubmitWorkController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2064">
-          <caret line="108" column="102" selection-start-line="108" selection-start-column="102" selection-end-line="108" selection-end-column="102" />
+        <state relative-caret-position="528">
+          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/util/DuplicateCheckingUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1739,21 +1762,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/util/DuplicateCheckingUtil.java">
+    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="505">
+          <caret line="119" column="3" selection-start-line="119" selection-start-column="3" selection-end-line="121" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/submitwork/SubmitWorkController.java">
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-        </state>
+        <state relative-caret-position="-1224" />
       </provider>
     </entry>
   </component>
