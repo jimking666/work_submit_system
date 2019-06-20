@@ -14,24 +14,6 @@ public interface ClazzService {
     List<ClazzDto> queryAllClazz();
 
     /**
-     * 班级学生个数增加1
-     *
-     * @param clazzId
-     *
-     * @return
-     */
-    String studentCountIncrease(Long clazzId);
-
-    /**
-     * 班级学生个数减去1
-     *
-     * @param clazzId
-     *
-     * @return
-     */
-    int studentCountSubtract(Long clazzId);
-
-    /**
      * 通过班级id查询班级dto
      *
      * @param clazzId
@@ -46,4 +28,12 @@ public interface ClazzService {
      * @return
      */
     List<ClazzDto> getBySearchClazzName(String searchClazzName);
+
+    /**
+     * 通过班级id修改班级记录
+     *
+     * @param clazzDto
+     * @return
+     */
+    int updateByClazzId(ClazzDto clazzDto);
 }

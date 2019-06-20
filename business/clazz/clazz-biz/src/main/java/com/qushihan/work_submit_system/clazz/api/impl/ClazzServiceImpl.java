@@ -2,7 +2,6 @@ package com.qushihan.work_submit_system.clazz.api.impl;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.BeanUtils;
@@ -13,8 +12,6 @@ import org.springframework.util.CollectionUtils;
 import com.qushihan.work_submit_system.clazz.api.ClazzService;
 import com.qushihan.work_submit_system.clazz.dao.ClazzDao;
 import com.qushihan.work_submit_system.clazz.dto.ClazzDto;
-import com.qushihan.work_submit_system.clazz.enums.ClazzErrorCode;
-import com.qushihan.work_submit_system.clazz.enums.StudentCountIncreaseStatus;
 import com.qushihan.work_submit_system.clazz.model.auto.Clazz;
 
 @Service
@@ -38,34 +35,8 @@ public class ClazzServiceImpl implements ClazzService {
     }
 
     @Override
-    public String studentCountIncrease(Long clazzId) {
-        List<Clazz> clazzes = clazzDao.getByClazzId(clazzId);
-        if (CollectionUtils.isEmpty(clazzes)) {
-            return ClazzErrorCode.NO_SUCH_CLAZZ.getMessage();
-        }
-        Clazz clazz = clazzes.stream().findFirst().orElse(new Clazz());
-        Long count = clazz.getStudentCount();
-        clazz.setStudentCount(count + 1);
-        clazzDao.studentCountIncrease(clazz, clazzId);
-        return StudentCountIncreaseStatus.INCREASE_SUCCESS.getMessage();
-    }
-
-    @Override
-    public int studentCountSubtract(Long clazzId) {
-        List<Clazz> clazzes = clazzDao.getByClazzId(clazzId);
-        Clazz clazz = clazzes.stream().findFirst().orElse(new Clazz());
-        Long count = clazz.getStudentCount();
-        clazz.setStudentCount(count - 1);
-        return clazzDao.studentCountIncrease(clazz, clazzId);
-    }
-
-    @Override
     public ClazzDto getByClazzId(Long clazzId) {
-        List<Clazz> clazzes = clazzDao.getByClazzId(clazzId);
-        if (CollectionUtils.isEmpty(clazzes)) {
-            return new ClazzDto();
-        }
-        Clazz clazz = clazzes.stream().findFirst().orElse(new Clazz());
+        Clazz clazz = clazzDao.getByClazzId(clazzId);
         ClazzDto clazzDto = new ClazzDto();
         BeanUtils.copyProperties(clazz, clazzDto);
         return clazzDto;
@@ -81,5 +52,12 @@ public class ClazzServiceImpl implements ClazzService {
                     return clazzDto;
                 })
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public int updateByClazzId(ClazzDto clazzDto) {
+        Clazz clazz = new Clazz();
+        BeanUtils.copyProperties(clazzDto, clazz);
+        return clazzDao.updateByClazzId(clazz);
     }
 }

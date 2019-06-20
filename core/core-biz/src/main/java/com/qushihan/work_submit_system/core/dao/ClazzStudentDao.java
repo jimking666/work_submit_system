@@ -19,33 +19,34 @@ public class ClazzStudentDao {
     ClazzStudentMapper clazzStudentMapper;
 
     /**
-     * 新增一条关联记录
+     * 新增班级学生记录
      *
      * @param clazzStudent
      *
      * @return
      */
-    public int increaseRecord(ClazzStudent clazzStudent) {
+    public int insertClazzStudent(ClazzStudent clazzStudent) {
+        if (!Optional.ofNullable(clazzStudent).isPresent()) {
+            return 0;
+        }
         return clazzStudentMapper.insertSelective(clazzStudent);
     }
 
     /**
      * 根据clazzStudentId更改ClazzStudent记录
      *
-     * @param clazzStudentId
+     * @param clazzStudent
      *
      * @return
      */
-    public int updateByClazzStudentId(ClazzStudent clazzStudent, Long clazzStudentId) {
+    public int updateByClazzStudentId(ClazzStudent clazzStudent) {
         if (!Optional.ofNullable(clazzStudent).isPresent()) {
-            return 0;
-        }
-        if (!Optional.ofNullable(clazzStudentId).isPresent()) {
             return 0;
         }
         ClazzStudentExample clazzStudentExample = new ClazzStudentExample();
         ClazzStudentExample.Criteria criteria = clazzStudentExample.createCriteria();
-        criteria.andClazzStudentIdEqualTo(clazzStudentId);
+        criteria.andClazzStudentIdEqualTo(clazzStudent.getClazzStudentId());
+        criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
         return clazzStudentMapper.updateByExampleSelective(clazzStudent, clazzStudentExample);
     }
 
@@ -63,6 +64,23 @@ public class ClazzStudentDao {
         ClazzStudentExample clazzStudentExample = new ClazzStudentExample();
         ClazzStudentExample.Criteria criteria = clazzStudentExample.createCriteria();
         criteria.andStudentIdEqualTo(studentId);
+        criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
+        return clazzStudentMapper.selectByExample(clazzStudentExample);
+    }
+
+    /**
+     * 通过班级id获取班级学生记录
+     *
+     * @param clazzId
+     * @return
+     */
+    public List<ClazzStudent> getByClazzId(Long clazzId) {
+        if (!Optional.ofNullable(clazzId).isPresent()) {
+            return Collections.emptyList();
+        }
+        ClazzStudentExample clazzStudentExample = new ClazzStudentExample();
+        ClazzStudentExample.Criteria criteria = clazzStudentExample.createCriteria();
+        criteria.andClazzIdEqualTo(clazzId);
         criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
         return clazzStudentMapper.selectByExample(clazzStudentExample);
     }

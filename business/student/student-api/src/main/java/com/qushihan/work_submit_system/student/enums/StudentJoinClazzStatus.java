@@ -13,12 +13,7 @@ public enum StudentJoinClazzStatus {
     /**
      * 加入成功
      */
-    JOIN_SUCCESS(0, "加入成功"),
-
-    /**
-     * 加入失败
-     */
-    JOIN_FAIL(1, "加入失败");
+    JOIN_SUCCESS(0, "加入成功");
 
     @Getter
     private Integer code;

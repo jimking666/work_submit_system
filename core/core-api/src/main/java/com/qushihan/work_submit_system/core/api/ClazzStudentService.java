@@ -2,17 +2,19 @@ package com.qushihan.work_submit_system.core.api;
 
 import com.qushihan.work_submit_system.core.dto.ClazzStudentDto;
 
+import java.util.List;
+
 public interface ClazzStudentService {
 
     /**
-     * 班级学生关联记录插入
+     * 新增班级学生关联记录
      *
      * @param clazzId
      * @param studentId
      *
      * @return
      */
-    String increaseRecord(Long clazzId, Long studentId);
+    int insertClazzStudent(Long clazzId, Long studentId);
 
     /**
      * 通过学生id查询班级学生关联表记录
@@ -26,9 +28,17 @@ public interface ClazzStudentService {
     /**
      * 根据clazzStudentId将ClazzStudent记录更改
      *
-     * @param clazzStudentId
+     * @param clazzStudentDto
      *
      * @return
      */
-    int updateByClazzStudentId(ClazzStudentDto clazzStudentDto, Long clazzStudentId);
+    int updateByClazzStudentId(ClazzStudentDto clazzStudentDto);
+
+    /**
+     * 通过班级id查询班级学生关联表记录
+     *
+     * @param clazzId
+     * @return
+     */
+    List<ClazzStudentDto> getByClazzId(Long clazzId);
 }

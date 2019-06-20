@@ -3,7 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="99134672-e638-4026-b755-2776e34aad3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/teacher/teacher-biz/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business/teacher/teacher-biz/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/clazz/clazz-api/src/main/java/com/qushihan/work_submit_system/clazz/api/ClazzService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/clazz/clazz-api/src/main/java/com/qushihan/work_submit_system/clazz/api/ClazzService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/clazz/clazz-api/src/main/java/com/qushihan/work_submit_system/clazz/enums/StudentCountIncreaseStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/clazz/clazz-api/target/classes/com/qushihan/work_submit_system/clazz/api/ClazzService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/clazz/clazz-api/target/classes/com/qushihan/work_submit_system/clazz/api/ClazzService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/clazz/clazz-api/target/classes/com/qushihan/work_submit_system/clazz/enums/StudentCountIncreaseStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/api/impl/ClazzServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/api/impl/ClazzServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/dao/ClazzDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/dao/ClazzDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/clazz/clazz-biz/target/classes/com/qushihan/work_submit_system/clazz/api/impl/ClazzServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/clazz/clazz-biz/target/classes/com/qushihan/work_submit_system/clazz/api/impl/ClazzServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/clazz/clazz-biz/target/classes/com/qushihan/work_submit_system/clazz/dao/ClazzDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/clazz/clazz-biz/target/classes/com/qushihan/work_submit_system/clazz/dao/ClazzDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/api/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/api/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/StudentJoinClazzStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/StudentJoinClazzStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/api/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/api/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/enums/StudentJoinClazzStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-api/target/classes/com/qushihan/work_submit_system/student/enums/StudentJoinClazzStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/mapper/biz/StudentBizMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/mapper/biz/StudentBizMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-biz/target/classes/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-biz/target/classes/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-biz/target/classes/com/qushihan/work_submit_system/student/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/business/student/student-biz/target/classes/com/qushihan/work_submit_system/student/dao/StudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-biz/target/classes/com/qushihan/work_submit_system/student/mapper/biz/StudentBizMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/student/student-biz/target/classes/com/qushihan/work_submit_system/student/mapper/biz/StudentBizMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/util/DuplicateCheckingUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/util/DuplicateCheckingUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/teacher/teacher-biz/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business/teacher/teacher-biz/target/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core-api/src/main/java/com/qushihan/work_submit_system/core/api/ClazzStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/core-api/src/main/java/com/qushihan/work_submit_system/core/api/ClazzStudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core-api/target/classes/com/qushihan/work_submit_system/core/api/ClazzStudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/core-api/target/classes/com/qushihan/work_submit_system/core/api/ClazzStudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/api/impl/ClazzStudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/api/impl/ClazzStudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core-biz/target/classes/com/qushihan/work_submit_system/core/api/impl/ClazzStudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/core-biz/target/classes/com/qushihan/work_submit_system/core/api/impl/ClazzStudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core-biz/target/classes/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/core-biz/target/classes/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/app/target/" />
@@ -39,54 +67,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/work/WorkController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-528">
+              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/submitwork/SubmitWorkController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2328">
-              <caret line="119" column="3" selection-start-line="119" selection-start-column="3" selection-end-line="121" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-642">
+              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/resources/generatorConfig.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/teacher/teacher-biz/src/main/resources/generatorConfig.xml">
+        <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/dao/SubmitWorkDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1488">
-              <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+            <state relative-caret-position="-48">
+              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-api/src/main/java/com/qushihan/work_submit_system/submitwork/dto/SubmitWorkDto.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/browseClazzPage.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/StudentDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            </state>
+            <state relative-caret-position="-2664" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/biz/service/SubmitWorkBizService.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            <state relative-caret-position="126">
+              <caret line="157" column="61" selection-start-line="157" selection-start-column="61" selection-end-line="157" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -94,35 +121,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/api/StudentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="21" column="89" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="89" />
+            <state relative-caret-position="198">
+              <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="121" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inf/src/main/java/com/qushihan/work_submit_system/inf/util/TransitionUtil.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/clazz/ClazzController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="-288">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar!/org/apache/commons/lang3/StringUtils.class">
+        <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/studentDetailPage.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56928">
-              <caret line="2451" column="26" selection-start-line="2451" selection-start-column="26" selection-end-line="2451" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/RegisterStudentRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="317">
+              <caret line="133" column="40" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -186,7 +213,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/business/submitwork/submitwork-biz/pom.xml" />
         <option value="$PROJECT_DIR$/business/work/work-api/src/main/java/com.qushihan.work_submit_system.work/dto/WorkDto.java" />
         <option value="$PROJECT_DIR$/business/work/work-biz/src/main/java/com/qushihan/work_submit_system/work/biz/service/WorkBizService.java" />
         <option value="$PROJECT_DIR$/core/core-biz/src/main/test/com/qushihan/work_submit_system/core/dao/redisTest.java" />
@@ -195,7 +221,6 @@
         <option value="$PROJECT_DIR$/business/submitwork/submitwork-api/src/main/java/com/qushihan/work_submit_system/submitwork/enums/EditSubmitWorkStatus.java" />
         <option value="$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/dao/SubmitWorkDao.java" />
         <option value="$PROJECT_DIR$/app/.gitignore" />
-        <option value="$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/util/DuplicateCheckingUtil.java" />
         <option value="$PROJECT_DIR$/inf/pom.xml" />
         <option value="$PROJECT_DIR$/business/work/work-api/src/main/java/com.qushihan.work_submit_system.work/dto/GetWorkBySearchRequest.java" />
         <option value="$PROJECT_DIR$/business/work/work-api/src/main/java/com.qushihan.work_submit_system.work/api/WorkService.java" />
@@ -221,22 +246,24 @@
         <option value="$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/api/impl/CourseTeacherClazzServiceImpl.java" />
         <option value="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/LoginStudentRequest.java" />
         <option value="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/JudgeLoginStatus.java" />
-        <option value="$PROJECT_DIR$/business/clazz/clazz-api/src/main/java/com/qushihan/work_submit_system/clazz/api/ClazzService.java" />
-        <option value="$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/dao/ClazzDao.java" />
-        <option value="$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/api/impl/ClazzServiceImpl.java" />
-        <option value="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/dao/StudentDao.java" />
-        <option value="$PROJECT_DIR$/core/core-api/src/main/java/com/qushihan/work_submit_system/core/api/ClazzStudentService.java" />
-        <option value="$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/api/impl/ClazzStudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.java" />
-        <option value="$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java" />
         <option value="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/RegisterStudentRequest.java" />
-        <option value="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/api/StudentService.java" />
-        <option value="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/JudgeRegisterStatus.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java" />
         <option value="$PROJECT_DIR$/app/src/main/resources/templates/login.ftl" />
         <option value="$PROJECT_DIR$/app/src/main/resources/templates/register.ftl" />
         <option value="$PROJECT_DIR$/business/teacher/teacher-biz/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java" />
+        <option value="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/api/StudentService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java" />
+        <option value="$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/dao/ClazzDao.java" />
+        <option value="$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.java" />
+        <option value="$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/api/impl/ClazzStudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/core/core-api/src/main/java/com/qushihan/work_submit_system/core/api/ClazzStudentService.java" />
+        <option value="$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/StudentJoinClazzStatus.java" />
+        <option value="$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/api/impl/ClazzServiceImpl.java" />
+        <option value="$PROJECT_DIR$/business/clazz/clazz-api/src/main/java/com/qushihan/work_submit_system/clazz/api/ClazzService.java" />
+        <option value="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/dao/StudentDao.java" />
+        <option value="$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/util/DuplicateCheckingUtil.java" />
       </list>
     </option>
   </component>
@@ -283,7 +310,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -369,6 +396,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -441,28 +469,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -494,6 +500,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
+              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
@@ -509,778 +524,10 @@
               <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz" type="462c0819:PsiDirectoryNode" />
-              <item name="clazz-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-              <item name="course-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-              <item name="course-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-              <item name="course-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-              <item name="course-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-              <item name="student-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork" type="462c0819:PsiDirectoryNode" />
-              <item name="submitwork-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="work-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="work-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="work-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="work-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="work_submit_system" type="b2602c69:ProjectViewProjectNode" />
-              <item name="work_submit_system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="core-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1292,7 +539,7 @@
     <property name="SearchEverywhereHistoryKey" value="JudgeLoginStatus&#9;FILE&#9;file://C:/Users/JimKing/IdeaProjects/work_submit_system/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/JudgeLoginStatus.java&#10;SubmitWork&#9;FILE&#9;file:///Users/bjhl/IdeaProjects/work_submit_system/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/model/auto/SubmitWork.java&#10;StudentDto&#9;PSI&#9;JAVA://com.qushihan.work_submit_system.student.dto.StudentDto&#10;StudentBizMapper&#9;FILE&#9;file:///Users/bjhl/IdeaProjects/work_submit_system/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/mapper/biz/StudentBizMapper.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560497472010" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561039787626" />
     <property name="last_opened_file_path" value="C:/公司/mojito" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1391,12 +638,18 @@
       <workItem from="1560167733518" duration="2332000" />
       <workItem from="1560184890457" duration="132000" />
       <workItem from="1560405296901" duration="4138000" />
-      <workItem from="1560477056390" duration="1822000" />
+      <workItem from="1560477056390" duration="4283000" />
+      <workItem from="1560505781018" duration="1186000" />
+      <workItem from="1560516690058" duration="773000" />
+      <workItem from="1560574750451" duration="1195000" />
+      <workItem from="1560641018825" duration="8900000" />
+      <workItem from="1560760957262" duration="1300000" />
+      <workItem from="1560988277769" duration="13840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="341907000" />
+    <option name="totallyTimeSpent" value="371562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1408,10 +661,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1721" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18701142" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20375335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1421,8 +674,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33211678" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.40875912" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33211678" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" visible="true" weight="0.4081042" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32997987" />
@@ -1439,7 +692,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="5" visible="true" weight="0.25315696" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.25315696" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -1457,224 +710,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/StudentQuitClazzRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/StudentDetailRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/GetStudentBySearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/clazz/ClazzController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-api/src/main/java/com/qushihan/work_submit_system/submitwork/dto/QuerySubmitWorkContentRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-api/src/main/java/com/qushihan/work_submit_system/submitwork/dto/EditSubmitWorkRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-api/src/main/java/com/qushihan/work_submit_system/clazz/dto/GetClazzBySearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/work/work-api/src/main/java/com.qushihan.work_submit_system.work/dto/GetWorkBySearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/work/work-api/src/main/java/com.qushihan.work_submit_system.work/dto/QueryWorkRelationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/teacher/teacher-biz/src/main/java/com/qushihan/work_submit_system/teacher/mapper/auto/TeacherMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/work/WorkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="56" selection-start-line="56" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/api/impl/CourseTeacherClazzServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/LoginStudentRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/StudentJoinClazzRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/mapper/biz/StudentBizMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-api/src/main/java/com/qushihan/work_submit_system/clazz/api/ClazzService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/dao/ClazzDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/api/impl/ClazzServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-biz/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/core-api/src/main/java/com/qushihan/work_submit_system/core/dto/ClazzStudentDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/model/auto/ClazzStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/work/work-biz/src/main/java/com/qushihan/work_submit_system/work/dao/WorkDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/work/work-biz/src/main/java/com/qushihan/work_submit_system/work/biz/service/WorkBizService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/work/work-biz/src/main/java/com/qushihan/work_submit_system/work/api/impl/WorkServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="88" column="26" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/mapper/auto/ClazzStudentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/core-api/src/main/java/com/qushihan/work_submit_system/core/api/ClazzStudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/api/impl/ClazzStudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="52" column="31" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/workDetailPage.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="144" column="17" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/studentDetailPage.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="133" column="40" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1706,41 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/submitwork/SubmitWorkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/util/DuplicateCheckingUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/model/auto/SubmitWork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="984">
           <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2328">
-          <caret line="119" column="3" selection-start-line="119" selection-start-column="3" selection-end-line="121" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1754,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-api/src/main/java/com/qushihan/work_submit_system/submitwork/dto/SubmitWorkDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/biz/service/SubmitWorkBizService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1768,10 +769,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/api/StudentService.java">
+    <entry file="file://$PROJECT_DIR$/business/teacher/teacher-biz/src/main/java/com/qushihan/work_submit_system/teacher/mapper/auto/TeacherMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="89" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="89" />
+        <state relative-caret-position="96">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentApiPkg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/model/auto/Clazz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="40" column="69" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -1796,10 +811,254 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/StudentDto.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/workDetailPage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="171" column="24" selection-start-line="171" selection-start-column="24" selection-end-line="171" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/mapper/biz/StudentBizMapper.java" />
+    <entry file="file://$PROJECT_DIR$/core/core-api/src/main/java/com/qushihan/work_submit_system/core/dto/ClazzStudentDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/mapper/auto/StudentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-api/src/main/java/com/qushihan/work_submit_system/clazz/enums/StudentCountIncreaseStatus.java" />
+    <entry file="file://$PROJECT_DIR$/core/core-api/src/main/java/com/qushihan/work_submit_system/core/enums/ClazzStudentStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/enums/StudentJoinClazzStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-api/src/main/java/com/qushihan/work_submit_system/clazz/api/ClazzService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/dao/StudentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/dao/ClazzDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/api/impl/CourseTeacherClazzServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/dao/CoreDaoPkg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/dao/ClazzStudentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/core-biz/src/main/java/com/qushihan/work_submit_system/core/api/impl/ClazzStudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/core-api/src/main/java/com/qushihan/work_submit_system/core/api/ClazzStudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="655" column="18" selection-start-line="655" selection-start-column="18" selection-end-line="655" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-api/src/main/java/com/qushihan/work_submit_system/submitwork/dto/SubmitWorkDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/dto/StudentDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/api/impl/ClazzServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/api/impl/ClazzApiPkg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/biz/service/ClazzServiceBizPkg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/config/ClazzSpringConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/clazz/clazz-biz/src/main/java/com/qushihan/work_submit_system/clazz/mapper/auto/ClazzMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="201" column="19" selection-start-line="201" selection-start-column="19" selection-end-line="201" selection-end-column="19" />
+          <folding>
+            <element signature="e#7396#7397#0" expanded="true" />
+            <element signature="e#7437#7438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/util/DuplicateCheckingUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#1154#1162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/studentDetailPage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="133" column="40" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/resources/templates/browseClazzPage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2664" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/clazz/ClazzController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/work/WorkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/submitwork/SubmitWorkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="34" column="54" lean-forward="true" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/dao/SubmitWorkDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/submitwork/submitwork-biz/src/main/java/com/qushihan/work_submit_system/submitwork/api/impl/SubmitWorkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-642">
+          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qushihan/work_submit_system/app/controller/student/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="157" column="61" selection-start-line="157" selection-start-column="61" selection-end-line="157" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/student/student-api/src/main/java/com/qushihan/work_submit_system/student/api/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/business/student/student-biz/src/main/java/com/qushihan/work_submit_system/student/api/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="121" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -55,7 +55,7 @@ public interface StudentService {
      *
      * @return
      */
-    StudentDto queryStudentByStudentId(Long studentId);
+    StudentDto getByStudentId(Long studentId);
 
     /**
      * 通过班级Id查询班中学生Dto列表

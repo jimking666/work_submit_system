@@ -284,8 +284,7 @@ public class DuplicateCheckingUtil {
                     token = cur - 1;
                 }
                 preType = TYPE_STAR;
-            } else if(input[cur] == NEWLINE)
-            {
+            } else if(input[cur] == NEWLINE) {
                 if(preType == TYPE_DSLASH)
                 {
                     input = del(input, token, cur);

@@ -2,7 +2,6 @@ package com.qushihan.work_submit_system.student.api.impl;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.qushihan.work_submit_system.inf.enums.FieldIsdelStatus;
@@ -14,15 +13,11 @@ import org.springframework.util.CollectionUtils;
 
 import com.qushihan.work_submit_system.clazz.api.ClazzService;
 import com.qushihan.work_submit_system.clazz.dto.ClazzDto;
-import com.qushihan.work_submit_system.clazz.enums.StudentCountIncreaseStatus;
 import com.qushihan.work_submit_system.core.api.ClazzStudentService;
 import com.qushihan.work_submit_system.core.dto.ClazzStudentDto;
-import com.qushihan.work_submit_system.core.enums.ClazzStudentStatus;
 import com.qushihan.work_submit_system.inf.util.TransitionUtil;
 import com.qushihan.work_submit_system.student.api.StudentService;
 import com.qushihan.work_submit_system.student.dao.StudentDao;
-import com.qushihan.work_submit_system.student.dto.LoginStudentRequest;
-import com.qushihan.work_submit_system.student.dto.RegisterStudentRequest;
 import com.qushihan.work_submit_system.student.dto.StudentDto;
 import com.qushihan.work_submit_system.student.dto.StudentJoinClazzRequest;
 import com.qushihan.work_submit_system.student.enums.JudgeRegisterStatus;
@@ -83,20 +78,17 @@ public class StudentServiceImpl implements StudentService {
     public String studentJoinClazz(StudentJoinClazzRequest studentJoinClazzRequest) {
         Long studentId = TransitionUtil.stringToLong(studentJoinClazzRequest.getStudentId());
         Long clazzId = TransitionUtil.stringToLong(studentJoinClazzRequest.getClazzId());
-        // 班级学生关联表增加记录
-        if (!clazzStudentService.increaseRecord(clazzId, studentId).equals(
-                ClazzStudentStatus.INSERT_SUCCESS.getMessage())) {
-            return StudentJoinClazzStatus.JOIN_FAIL.getMessge();
-        }
-        // 班级表学生个数增加一
-        if (!clazzService.studentCountIncrease(clazzId).equals(
-                StudentCountIncreaseStatus.INCREASE_SUCCESS.getMessage())) {
-            return StudentJoinClazzStatus.JOIN_FAIL.getMessge();
-        }
         // 学生表班级字段更改
-        Student student = new Student();
+        Student student = studentDao.getByStudentId(studentId);
         student.setClazzId(clazzId);
-        studentDao.updateByStudentId(studentId, student);
+        studentDao.updateByStudentId(student);
+        // 班级学生关联表增加记录
+        clazzStudentService.insertClazzStudent(clazzId, studentId);
+        // 班级表学生个数增加一
+        List<ClazzStudentDto> clazzStudentDtos = clazzStudentService.getByClazzId(clazzId);
+        ClazzDto clazzDto = clazzService.getByClazzId(clazzId);
+        clazzDto.setStudentCount((long) clazzStudentDtos.size());
+        clazzService.updateByClazzId(clazzDto);
         return StudentJoinClazzStatus.JOIN_SUCCESS.getMessge();
     }
 
@@ -104,33 +96,30 @@ public class StudentServiceImpl implements StudentService {
     @Transactional(rollbackFor = RuntimeException.class)
     public String studentQuitClazz(Long studentId) {
         // 学生表班级id字段更改为空
-        studentDao.setClazzIdNullByStudentId(studentId);
-        // 先将clazzStudent表中记录查询出来
+        Student student = studentDao.getByStudentId(studentId);
+        student.setClazzId(null);
+        studentDao.updateByStudentId(student);
+        // 将clazzStudent表中记录进行软删除
         ClazzStudentDto clazzStudentDto = clazzStudentService.getByStudentId(studentId);
         clazzStudentDto.setIsdel(FieldIsdelStatus.ISDEL_TRUE.getIsdel());
-        // 将clazzStudent表中记录进行软删除
-        clazzStudentService.updateByClazzStudentId(clazzStudentDto, clazzStudentDto.getClazzStudentId());
+        clazzStudentService.updateByClazzStudentId(clazzStudentDto);
         // 通过clazzId将学生数量减去1
         Long clazzId = clazzStudentDto.getClazzId();
-        clazzService.studentCountSubtract(clazzId);
+        List<ClazzStudentDto> clazzStudentDtos = clazzStudentService.getByClazzId(clazzId);
+        ClazzDto clazzDto = clazzService.getByClazzId(clazzId);
+        clazzDto.setStudentCount((long) clazzStudentDtos.size());
+        clazzService.updateByClazzId(clazzDto);
         return StudentQuitClazzStatus.QUIT_SUCCESS.getMessge();
     }
 
     @Override
-    public StudentDto queryStudentByStudentId(Long studentId) {
-        List<Student> students = studentDao.queryStudentListByStudentId(studentId);
-        if (CollectionUtils.isEmpty(students)) {
-            return new StudentDto();
-        }
-        Student student = students.stream().findFirst().orElse(null);
-        if (Optional.ofNullable(student).isPresent()) {
-            StudentDto studentDto = new StudentDto();
-            BeanUtils.copyProperties(student, studentDto);
-            ClazzDto clazzDto = clazzService.getByClazzId(student.getClazzId());
-            studentDto.setClazzName(clazzDto.getClazzName());
-            return studentDto;
-        }
-        return null;
+    public StudentDto getByStudentId(Long studentId) {
+        Student student = studentDao.getByStudentId(studentId);
+        StudentDto studentDto = new StudentDto();
+        BeanUtils.copyProperties(student, studentDto);
+        ClazzDto clazzDto = clazzService.getByClazzId(student.getClazzId());
+        studentDto.setClazzName(clazzDto.getClazzName());
+        return studentDto;
     }
 
     @Override

@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 
 import com.qushihan.work_submit_system.inf.enums.FieldIsdelStatus;
 import com.qushihan.work_submit_system.student.mapper.auto.StudentMapper;
-import com.qushihan.work_submit_system.student.mapper.biz.StudentBizMapper;
 import com.qushihan.work_submit_system.student.model.auto.Student;
 import com.qushihan.work_submit_system.student.model.auto.StudentExample;
 
@@ -20,9 +19,6 @@ public class StudentDao {
 
     @Autowired
     private StudentMapper studentMapper;
-
-    @Autowired
-    private StudentBizMapper studentBizMapper;
 
     /**
      * 学生注册
@@ -75,40 +71,40 @@ public class StudentDao {
     /**
      * 通过学生id更改学生信息
      *
-     * @param studentId
+     * @param student
      * @param student
      *
      * @return
      */
-    public int updateByStudentId(Long studentId, Student student) {
-        if (!Optional.ofNullable(studentId).isPresent()) {
-            return 0;
-        }
+    public int updateByStudentId(Student student) {
         if (!Optional.ofNullable(student).isPresent()) {
             return 0;
         }
         StudentExample studentExample = new StudentExample();
         StudentExample.Criteria criteria = studentExample.createCriteria();
-        criteria.andStudentIdEqualTo(studentId);
-        return studentMapper.updateByExampleSelective(student, studentExample);
+        criteria.andStudentIdEqualTo(student.getStudentId());
+        criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
+        return studentMapper.updateByExample(student, studentExample);
     }
 
     /**
-     * 通过学生id查询学生列表
+     * 通过学生id查询学生
      *
      * @param studentId
      *
      * @return
      */
-    public List<Student> queryStudentListByStudentId(Long studentId) {
+    public Student getByStudentId(Long studentId) {
         if (!Optional.ofNullable(studentId).isPresent()) {
-            return Collections.EMPTY_LIST;
+            return new Student();
         }
         StudentExample example = new StudentExample();
         StudentExample.Criteria criteria = example.createCriteria();
         criteria.andStudentIdEqualTo(studentId);
         criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
-        return studentMapper.selectByExample(example);
+        return studentMapper.selectByExample(example).stream()
+                .findFirst()
+                .orElse(new Student());
     }
 
     /**
@@ -127,20 +123,6 @@ public class StudentDao {
         criteria.andClazzIdEqualTo(clazzId);
         criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
         return studentMapper.selectByExample(studentExample);
-    }
-
-    /**
-     * 通过学生id将Student表clazzId字段置为NULL
-     *
-     * @param studentId
-     *
-     * @return
-     */
-    public int setClazzIdNullByStudentId(Long studentId) {
-        if (!Optional.ofNullable(studentId).isPresent()) {
-            return 0;
-        }
-        return studentBizMapper.setClazzIdNullByStudentId(studentId);
     }
 
     /**

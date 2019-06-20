@@ -32,39 +32,21 @@ public class ClazzDao {
     }
 
     /**
-     * 通过班级id查询班级列表
+     * 通过班级id查询班级
      *
      * @return
      */
-    public List<Clazz> getByClazzId(Long clazzId) {
+    public Clazz getByClazzId(Long clazzId) {
         if (!Optional.ofNullable(clazzId).isPresent()) {
-            return Collections.emptyList();
+            return new Clazz();
         }
         ClazzExample clazzExample = new ClazzExample();
         ClazzExample.Criteria criteria = clazzExample.createCriteria();
         criteria.andClazzIdEqualTo(clazzId);
         criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
-        return clazzMapper.selectByExample(clazzExample);
-    }
-
-    /**
-     * 班级学生数量增加1
-     *
-     * @param clazz
-     * @param clazzId
-     */
-    public int studentCountIncrease(Clazz clazz, Long clazzId) {
-        if (!Optional.ofNullable(clazz).isPresent()) {
-            return 0;
-        }
-        if (!Optional.ofNullable(clazzId).isPresent()) {
-            return 0;
-        }
-        ClazzExample clazzExample = new ClazzExample();
-        ClazzExample.Criteria criteria = clazzExample.createCriteria();
-        criteria.andClazzIdEqualTo(clazzId);
-        criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
-        return clazzMapper.updateByExampleSelective(clazz, clazzExample);
+        return clazzMapper.selectByExample(clazzExample).stream()
+                .findFirst()
+                .orElse(new Clazz());
     }
 
     /**
@@ -81,5 +63,22 @@ public class ClazzDao {
         }
         criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
         return clazzMapper.selectByExample(clazzExample);
+    }
+
+    /**
+     * 通过班级id修改班级记录
+     *
+     * @param clazz
+     * @return
+     */
+    public int updateByClazzId(Clazz clazz) {
+        if (!Optional.ofNullable(clazz).isPresent()) {
+            return 0;
+        }
+        ClazzExample clazzExample = new ClazzExample();
+        ClazzExample.Criteria criteria = clazzExample.createCriteria();
+        criteria.andClazzIdEqualTo(clazz.getClazzId());
+        criteria.andIsdelEqualTo(FieldIsdelStatus.ISDEL_FALSE.getIsdel());
+        return clazzMapper.updateByExampleSelective(clazz, clazzExample);
     }
 }

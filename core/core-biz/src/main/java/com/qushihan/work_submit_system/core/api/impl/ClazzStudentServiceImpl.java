@@ -1,6 +1,8 @@
 package com.qushihan.work_submit_system.core.api.impl;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,14 +24,13 @@ public class ClazzStudentServiceImpl implements ClazzStudentService {
     private ClazzStudentDao clazzStudentDao;
 
     @Override
-    public String increaseRecord(Long clazzId, Long studentId) {
+    public int insertClazzStudent(Long clazzId, Long studentId) {
         Long clazzStudentId = ClazzStudentUtil.getClazzStudentId(clazzId, studentId);
         ClazzStudent clazzStudent = new ClazzStudent();
         clazzStudent.setClazzStudentId(clazzStudentId);
         clazzStudent.setClazzId(clazzId);
         clazzStudent.setStudentId(studentId);
-        clazzStudentDao.increaseRecord(clazzStudent);
-        return ClazzStudentStatus.INSERT_SUCCESS.getMessage();
+        return clazzStudentDao.insertClazzStudent(clazzStudent);
     }
 
     @Override
@@ -47,9 +48,23 @@ public class ClazzStudentServiceImpl implements ClazzStudentService {
     }
 
     @Override
-    public int updateByClazzStudentId(ClazzStudentDto clazzStudentDto, Long clazzStudentId) {
+    public int updateByClazzStudentId(ClazzStudentDto clazzStudentDto) {
         ClazzStudent clazzStudent = new ClazzStudent();
         BeanUtils.copyProperties(clazzStudentDto, clazzStudent);
-        return clazzStudentDao.updateByClazzStudentId(clazzStudent, clazzStudentId);
+        return clazzStudentDao.updateByClazzStudentId(clazzStudent);
+    }
+
+    @Override
+    public List<ClazzStudentDto> getByClazzId(Long clazzId) {
+        List<ClazzStudent> clazzStudents = clazzStudentDao.getByClazzId(clazzId);
+        if (CollectionUtils.isEmpty(clazzStudents)) {
+            return Collections.emptyList();
+        }
+        return clazzStudents.stream()
+                .map(clazzStudent -> {
+                    ClazzStudentDto clazzStudentDto = new ClazzStudentDto();
+                    BeanUtils.copyProperties(clazzStudent, clazzStudentDto);
+                    return clazzStudentDto;
+                }).collect(Collectors.toList());
     }
 }

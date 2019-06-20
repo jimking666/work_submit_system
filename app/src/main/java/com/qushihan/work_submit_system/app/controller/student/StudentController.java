@@ -118,7 +118,7 @@ public class StudentController {
             HttpServletRequest request, HttpServletResponse response) {
         String joinMessage = studentService.studentJoinClazz(studentJoinClazzRequest);
         Long studentId = TransitionUtil.stringToLong(studentJoinClazzRequest.getStudentId());
-        StudentDto studentDto = studentService.queryStudentByStudentId(studentId);
+        StudentDto studentDto = studentService.getByStudentId(studentId);
         List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
         request.getServletContext().setAttribute("studentDto", studentDto);
         request.getServletContext().setAttribute("clazzDtos", clazzDtos);
@@ -137,7 +137,7 @@ public class StudentController {
             HttpServletRequest request, HttpServletResponse response) {
         Long studentId = TransitionUtil.stringToLong(studentQuitClazzRequest.getStudentId());
         String quitMessage = studentService.studentQuitClazz(studentId);
-        StudentDto studentDto = studentService.queryStudentByStudentId(studentId);
+        StudentDto studentDto = studentService.getByStudentId(studentId);
         List<ClazzDto> clazzDtos = clazzService.queryAllClazz();
         request.getServletContext().setAttribute("studentDto", studentDto);
         request.getServletContext().setAttribute("clazzDtos", clazzDtos);
